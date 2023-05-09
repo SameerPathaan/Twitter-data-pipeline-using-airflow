@@ -6,7 +6,7 @@ In this project, I have built an ETL pipeline in integration of Apache Airflow u
 ### Architecture_Diagram: [Architecture](https://github.com/SameerPathaan/Twitter-data-pipeline-using-airflow/blob/main/Architecture.png)
 
 ### Architecture and Pipeline flow
-Twitter API - Airflow on Amazon EC2 - Amazon S3 
+**Twitter API - Airflow on Amazon EC2 - Amazon S3**
 
 Description: The data is extracted from twitter API and raw data is converted into desired format. Some of the imporant features like number of likes of a user, number of retweets, the text that is tweeted etc and the transformations are applied using python. Then a virtual EC2 instance is created to run the orchestration tool Apache Airflow to execute the process on top of it. A Dag folder is created in Apache Airflow using the command line of the virtual machine running on cloud AWS to get the ETL code and Dag code to exectue the Entire ETL Process. Once the Dag runs, it extracts the data directly from the Twitter API, transforms it desired csv format and load the data into Amazon S3
 
